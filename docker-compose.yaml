@@ -1,0 +1,38 @@
+version: '3.1'
+services:
+
+  app:
+    container_name: app
+    build:
+      context: ./app
+      dockerfile: Dockerfile.dev
+      args:
+        - UID=${UID:-1000}
+        - GID=${GID:-1000}
+    working_dir: /var/www/html
+    restart: unless-stopped
+    volumes:
+      - /var/www/html/vendor
+      - ./app:/var/www/html
+    networks:
+      - oop-app-frontend
+      - oop-app-backend
+
+  webserver:
+    container_name: nginx
+    build:
+      context: ./webserver
+      dockerfile: Dockerfile.dev
+    depends_on:
+      - app
+    restart: always
+    ports:
+      - ${FORWARD_WEBSERVER_PORT:-8080}:80
+    networks:
+        - oop-app-frontend
+
+networks:
+  oop-app-frontend:
+    driver: bridge
+  oop-app-backend:
+    driver: bridge
