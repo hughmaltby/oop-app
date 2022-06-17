@@ -31,6 +31,15 @@ services:
     networks:
         - oop-app-frontend
 
+  api:
+    container_name: oop-api
+    build:
+      context: ./api
+    ports:
+      - ${API_PORT:-8081}:80
+    networks:
+      - oop-app-backend
+
 networks:
   oop-app-frontend:
     driver: bridge

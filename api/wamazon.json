@@ -1,0 +1,33 @@
+{
+  "orders": [
+    {
+      "id": 1,
+      "origin": "wamazon",
+      "line1": "Alycia Walks",
+      "city": "San Angelo",
+      "state": "Indiana",
+      "country": "Barbados",
+      "currency": "GBP"
+    },
+    {
+      "id": 2,
+      "origin": "wamazon",
+      "line1": "5194 Edgardo Overpass",
+      "city": "Richardson",
+      "state": "Oklahoma",
+      "country": "Timor-Leste",
+      "currency": "GBP"
+    },
+    {
+      "id": 3,
+      "origin": "wamazon",
+      "line1": "801 Candelario Rapid",
+      "city": "East Leif",
+      "state": "Louisiana",
+      "country": "Lao People's Democratic Republic",
+      "currency": "GBP"
+    }
+  ],
+  "currentPage": 1,
+  "pages": 3
+}

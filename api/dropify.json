@@ -1,0 +1,37 @@
+{
+  "orders": [
+    {
+      "id": 1,
+      "origin": "dropify",
+      "address": {
+        "street": "1697 Bayer Lake",
+        "city": "New Raphael",
+        "state": "Maine",
+        "country": "Republic of Korea"
+      },
+      "currency_id": 1
+    },
+    {
+      "id": 2,
+      "origin": "dropify",
+      "address": {
+        "street": "2064 Prosacco Lights",
+        "city": "New Matildaland",
+        "state": "Illinois",
+        "country": "Estonia"
+      },
+      "currency_id": 2
+    },
+    {
+      "id": 3,
+      "origin": "dropify",
+      "address": {
+        "street": "612 Pollich Stream",
+        "city": "Bartellchester",
+        "state": "Tennessee",
+        "country": "Macao"
+      },
+      "currency_id": 3
+    }
+  ]
+}

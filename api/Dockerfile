@@ -1,0 +1,8 @@
+FROM nginx:1.22-alpine
+
+RUN apk update && apk upgrade
+RUN rm -f /var/cache/apk/*
+
+COPY default.conf /etc/nginx/conf.d/default.conf
+
+COPY *.json /var/www/html/
