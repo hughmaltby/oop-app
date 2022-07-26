@@ -1,8 +1,8 @@
 <?php 
 
-// namespace App\Http\Clients;
+namespace App\Http\Clients;
 
-// interface OrderRetrievableContract
-// {
-//   public function index();
-// }
+interface OrderRetrievableContract
+{
+  public function index();
+}
